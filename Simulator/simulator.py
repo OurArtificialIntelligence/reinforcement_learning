@@ -16,19 +16,8 @@ class Simulator:
         # Your Code Goes Here!
     
     def f_function(self):
-        '''
-        Choose action based on an epsilon greedy approach
-        :return action selected
-        '''
-        x = random.random()
-        if x < self.epsilon
-            
-        else
 
         action_selected = None
-        
-        # Your Code Goes Here!
-        
         return action_selected
 
     def train_agent(self):
@@ -37,7 +26,7 @@ class Simulator:
         '''
         # Your Code Goes Here!
         pass
-    
+
     def play_game(self):
         '''
         Simulate an actual game till the agent loses.

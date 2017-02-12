@@ -1,6 +1,6 @@
 import random
+from graphics import *
 from Simulator.simulator import Simulator
-
 
 if __name__ == "__main__":
     '''
@@ -20,3 +20,12 @@ if __name__ == "__main__":
     Simulator(num_games, alpha_value, gamma_value, epsilon_value)
     x = random.random()
     print(x)
+
+    win = GraphWin("My Graph", 600, 600)
+    for i in range (0, 12):
+        for j in range (0, 12):
+            aRectangle = Rectangle(Point(i*40, j*40), Point(i*40+40, j*40+40))
+            aRectangle.draw(win)
+
+    win.getMouse()  # pause for click in window
+    win.close()
