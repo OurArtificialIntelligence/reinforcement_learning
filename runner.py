@@ -21,11 +21,14 @@ if __name__ == "__main__":
     x = random.random()
     print(x)
 
-    win = GraphWin("My Graph", 600, 600)
+    win = GraphWin("Pong Game", 200, 200)
     for i in range (0, 12):
         for j in range (0, 12):
-            aRectangle = Rectangle(Point(i*40, j*40), Point(i*40+40, j*40+40))
+            aRectangle = Rectangle(Point(i*10, j*10), Point(i*10+10, j*10+10))
             aRectangle.draw(win)
+
+    myball = Circle(Point(35, 45), 5)
+    myball.draw(win)
 
     win.getMouse()  # pause for click in window
     win.close()
