@@ -1,5 +1,3 @@
-This readme serves to give an overview of the flow of the MP.
-
 runner.py
 	- Setup the required parameters and start Simulation.
 
